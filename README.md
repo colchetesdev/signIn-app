@@ -12,7 +12,7 @@
 
 - Modern **Sign-In UI** design
 - **Theme toggle** (Light/Dark mode)
-- Input validation for **Name, Email, Phone, Password**
+- Input for **Name, Email, Phone, Password**
 - Modular and reusable components:
   - `InputList`
   - `Button`
