@@ -2,7 +2,10 @@ import {TextInput, View} from "react-native";
 import { useState } from "react";
 import { styles } from "./style";
 
-export default function InputList(){
+type InputListProps = {
+    darkTheme: boolean
+}
+export default function InputList({darkTheme}: InputListProps){
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -10,10 +13,10 @@ export default function InputList(){
 
     return(
         <View>
-            <TextInput style={styles.input} onChangeText={setName} value={name}  placeholder="Nome"/>
-            <TextInput style={styles.input} onChangeText={setEmail} value={email} placeholder="Email"/>
-            <TextInput style={styles.input} onChangeText={setPhone} value={phone} placeholder="Telefone"/>
-            <TextInput style={styles.input} onChangeText={setPassword} value={password} placeholder="Senha"/>
+            <TextInput style={[styles.input, darkTheme ? styles.dark : ""]} onChangeText={setName} value={name}  placeholder="Nome"/>
+            <TextInput style={[styles.input, darkTheme ? styles.dark : ""]} onChangeText={setEmail} value={email} placeholder="Email"/>
+            <TextInput style={[styles.input, darkTheme ? styles.dark : ""]} onChangeText={setPhone} value={phone} placeholder="Telefone"/>
+            <TextInput style={[styles.input, darkTheme ? styles.dark : ""]} onChangeText={setPassword} value={password} placeholder="Senha"/>
         </View>
 
     )

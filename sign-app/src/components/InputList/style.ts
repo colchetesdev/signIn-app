@@ -9,5 +9,10 @@ export const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#c7c7c7",
         marginVertical: 6,
+    },
+    dark: {
+        borderColor: "#454545",
+        backgroundColor: "#393737",
+        color: "#E3E3E3"
     }
 })

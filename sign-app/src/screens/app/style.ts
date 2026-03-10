@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f5f5f5',
     alignItems: 'center',
+    justifyContent: "flex-start"
   },
   image:{
     width: 200,
@@ -15,5 +16,15 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 800,
     marginBottom: 16,
+  },
+  toggleContainer:{
+    flex: 1,
+    alignItems: "flex-end",
+    height:10,
+    width: 10
+  },
+  dark:{
+    backgroundColor: "#1d1b22",
+    color: "#E3E3E3",
   }
 });
